@@ -1,12 +1,35 @@
-## Created with Capacitor Create App
+# Intro
+This is a simple Capacitor application, showing a basic html form.
+The html form includes autocomplete hints, for filling user data with existing
+user information.
 
-This app was created using [`@capacitor/create-app`](https://github.com/ionic-team/create-capacitor-app),
-and comes with a very minimal shell for building an app.
+# Setup
+The web part is only an html and a css file, it must not be built. The capacitor 
+config references the files directly. 
 
-### Running this example
+`npm install`
 
-To run the provided example, you can use `npm start` command.
+`npx cap sync`
 
-```bash
-npm start
-```
+`npx cap open android` |
+`npx cap open ios`
+
+# Android
+## Preparation
+- setup an autofill service
+    - Google Pixel 6a, Android 13: _Passwords & accounts_ > _Autofill service_
+- in my case I use the _Google_ Autofill service
+- make sure, the _Autofill service_ is enabled and provides data (check the settings)
+
+
+## Testing
+- start the app
+- begin typing in the fields
+- ⚠️no autofill behaviour within the app 
+
+
+# iOS
+## Testing
+- start the app
+- begin typing in the fields
+- ⚠️only some fields get autofill support
