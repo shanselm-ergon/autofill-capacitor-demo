@@ -1,0 +1,11 @@
+{
+  "appId": "ch.ergon.shanselm.capacitor.demo",
+  "appName": "Autofill Capacitor Demo",
+  "bundledWebRuntime": false,
+  "webDir": "src",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
